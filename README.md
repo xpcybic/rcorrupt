@@ -1,4 +1,5 @@
 # rcorrupt - A ROM (or other file) corruptor written in C
+an interesting description goes here
 
 ## Features
 - replaces roughly 10% of a file with garbage
@@ -21,3 +22,6 @@ rcorrupt \<target\>
 - user-friendliness
 - testing
 - a good readme
+
+## Disclaimer
+Use at your own risk. I am not responsible for damage, loss of data, etc. as a result of using this, especially on important files you don't want to write garbage to.
