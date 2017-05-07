@@ -1,12 +1,12 @@
 # rcorrupt - A ROM (or other file) corruptor written in C
 
 ## Features
-- replaces roughly 5% of a file with garbage
+- replaces roughly 10% of a file with garbage
 - is tiny
-- probably doesn't work
+- probably broken somewhere
 
 ## Installing
-1. git clone
+1. git clone or download zip
 2. make
 
 ## Usage
