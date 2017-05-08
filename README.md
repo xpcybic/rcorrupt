@@ -12,19 +12,19 @@ an interesting description goes here
 2. make
 
 ## Usage
-`rcorrupt \<options\> \<target\>`
+`rcorrupt <options> <target>`
 ### Options
 
 Argument | Description
 --- | ---
 Corruption mode (what to write to corrupted bytes)
 `-m rand, -m r `| Random values (default)
-`-m \<val\> `| Fixed value (0-255)
-`-m +\<val\> `| dd value (0-255)
+`-m <val> `| Fixed value (0-255)
+`-m +<val> `| dd value (0-255)
 Corruption range/amount options
-`-r \<start\> \<end\> `| Range of bytes to corrupt (default: entire file)
-`-p \<val\> `| Approx. percentage of addresses to corrupt (default: 10)
-`-i \<val\> `| Increment (corrupt every *val*th byte)
+`-r <start> <end> `| Range of bytes to corrupt (default: entire file)
+`-p <val> `| Approx. percentage of addresses to corrupt (default: 10)
+`-i <val> `| Increment (corrupt every *val*th byte)
 Other
 `-f `| Force (don't ask for confirmation before corrupting)
 `-q `| Quiet (don't display results when done)
