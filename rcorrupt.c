@@ -68,7 +68,7 @@ int ParseArgs(int argc, char *argv[])
 					else
 						return 1;
 					break;
-					
+
 				case 'r':
 					//range
 					//start
@@ -156,6 +156,7 @@ void CorruptByte(FILE *rFile, long rPos, char amt)
 
 	//get current val at address for cAdd
 	byte val = fgetc(rFile);
+	ungetc(val, rFile);
 
 	//write new value
 	if (fputc(cMethod(val, amt), rFile) == EOF)
@@ -251,17 +252,3 @@ int main(int argc, char *argv[])
 
 	return rt;
 }
-
-/*	-m	corruption mode (function) to use
- *		-m rand, -m r	random values
- *		-m <val>		set each byte to val
- *		-m +<val>		add val to each byte
- *	Corruption range/amount options
- *	-r <st> <end>		range of addresses to corrupt
- *	-p <val>			% of addresses to corrupt (default: 5)
- *	-i <val>			increment (corrupt every xth byte)
- *Other
- *	-h					display help
- *	-f					force (don't ask for confirmation)
- *	-q					quiet (don't display results when done)
- */
