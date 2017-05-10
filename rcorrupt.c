@@ -5,8 +5,6 @@
 #include <time.h>
 #include "rcorrupt.h"
 
-//TODO: fix corruption modes - additive and fixed do not do what they should
-
 void cleanup()
 {
 	if (rFile)
